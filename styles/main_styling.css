@@ -1,0 +1,10 @@
+#bstyling {
+  background-color: whitesmoke;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px;
+}
+
+li {
+list-style-type: none;
+
+}

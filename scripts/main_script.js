@@ -41,6 +41,13 @@ function addTaskElement(id) {
   newlyAddedTask.setAttribute('id', 'task' + id);
   newlyAddedTask.setAttribute('class', 'taskItem');
   document.getElementById('tskList').append(newlyAddedTask);
+  // Tilføjer bootstrap styling til 'li'
+  newlyAddedTask.setAttribute('class', 'list-group-item');
+  // Tilføjer bootstrap styling til 'button'
+  btnCheck.setAttribute('class', 'btn btn-outline-success');
+  btnCheck.setAttribute('id', 'position_check');
+  btnDelete.setAttribute('class', 'btn btn-outline-danger');
+  btnDelete.setAttribute('id', 'position_delete');
   // Tilføjer "event/click/listener" til 'Delete' knappen
   btnDelete.addEventListener('click', function () {
     deleteElement(id);
